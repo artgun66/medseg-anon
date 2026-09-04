@@ -1,7 +1,7 @@
 [package]
-name = "strokechat-desktop"
+name = "medseg-desktop"
 version = "0.1.0"
-description = "Zero-install desktop shell for StrokeChat (Tauri supervisor)"
+description = "Zero-install desktop shell for MedSeg (Tauri supervisor)"
 edition = "2021"
 rust-version = "1.77"
 

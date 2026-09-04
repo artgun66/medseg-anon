@@ -51,9 +51,9 @@ secrets/
 *.log
 
 # Large model files / local-only data
-/artun_model/BiomedParse/
-/artun_model/move_to_linux/
-/artun_model/outputs/
+/seg_model/BiomedParse/
+/seg_model/move_to_linux/
+/seg_model/outputs/
 
 # Desktop app (Tauri)
 /desktop/node_modules/

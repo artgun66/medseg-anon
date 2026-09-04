@@ -10,7 +10,7 @@ def test_root_returns_phase_marker() -> None:
     response = Client().get("/")
     assert response.status_code == 200
     body = response.json()
-    assert body["service"] == "strokechat-backend"
+    assert body["service"] == "medseg-backend"
     assert body["status"] == "ok"
 
 

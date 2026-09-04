@@ -10,7 +10,7 @@
 ../../infra
 ../../scripts
 ../../agent
-../../artun_model
+../../seg_model
 node_modules
 .next
 out

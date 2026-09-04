@@ -57,7 +57,7 @@ export default async function Page() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--muted)] md:text-lg">
-            Validated stroke-imaging models are often locked behind machine-learning tooling. StrokeChat brings
+            Validated stroke-imaging models are often locked behind machine-learning tooling. MedSeg brings
             them into one simple interface with MedGemma chat, fine-tuned BiomedParse lesion segmentation
             (developed by our team, see{" "}
             <a href="/publications" className="font-medium text-[var(--accent)] hover:underline">Publications</a>),
@@ -65,9 +65,9 @@ export default async function Page() {
             vessel segmentation, so you can upload a CT or CTA scan, inspect overlays, and ask follow-up questions.
           </p>
           <p className="mt-6 text-sm leading-relaxed text-[var(--muted)]">
-            StrokeChat is fully open source.{" "}
+            MedSeg is fully open source.{" "}
             <a
-              href="https://github.com/artgun66/StrokeChat"
+              href="https://anonymous.4open.science/r/ct-stroke-vlm"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[var(--accent)] hover:underline"
@@ -108,7 +108,7 @@ export default async function Page() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">Run locally</p>
             <p className="mt-1 text-base font-semibold text-[var(--text)]">Download the desktop app</p>
             <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-              Run StrokeChat fully offline, with all inference on your own hardware and no account needed.
+              Run MedSeg fully offline, with all inference on your own hardware and no account needed.
             </p>
           </div>
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--border)]">
@@ -122,7 +122,7 @@ export default async function Page() {
         <div className="flex flex-col gap-3 sm:flex-row">
           {/* macOS Apple Silicon */}
           <a
-            href="https://github.com/artgun66/StrokeChat/releases/latest/download/StrokeChat-mac-arm64.dmg"
+            href="https://anonymous.4open.science/r/ct-stroke-vlm"
             download
             className="group flex flex-1 items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3.5 transition hover:border-[var(--accent)]"
           >
@@ -140,7 +140,7 @@ export default async function Page() {
 
           {/* macOS Intel */}
           <a
-            href="https://github.com/artgun66/StrokeChat/releases/latest/download/StrokeChat-mac-x64.dmg"
+            href="https://anonymous.4open.science/r/ct-stroke-vlm"
             download
             className="group flex flex-1 items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3.5 transition hover:border-[var(--accent)]"
           >
@@ -158,7 +158,7 @@ export default async function Page() {
 
           {/* Windows */}
           <a
-            href="https://github.com/artgun66/StrokeChat/releases/latest/download/StrokeChat-win-x64-setup.exe"
+            href="https://anonymous.4open.science/r/ct-stroke-vlm"
             download
             className="group flex flex-1 items-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3.5 transition hover:border-[var(--accent)]"
           >
@@ -178,21 +178,21 @@ export default async function Page() {
         <div className="mt-4 rounded-lg border border-[var(--border)] bg-[var(--panel-elevated)] px-3 py-2.5">
           <p className="text-xs font-medium text-[var(--text)]">First launch on macOS</p>
           <p className="mt-1 text-xs leading-relaxed text-[var(--muted)]">
-            Move StrokeChat to Applications, then run{" "}
-            <code className="rounded bg-[var(--bg)] px-1 py-0.5 text-[11px] text-[var(--text)]">xattr -cr /Applications/StrokeChat.app</code>{" "}
+            Move MedSeg to Applications, then run{" "}
+            <code className="rounded bg-[var(--bg)] px-1 py-0.5 text-[11px] text-[var(--text)]">xattr -cr /Applications/MedSeg.app</code>{" "}
             in Terminal and open it normally.
           </p>
         </div>
         <p className="mt-2 text-xs text-[var(--muted)]">
           GPU with ≥ 8 GB VRAM recommended · macOS 13+ or Windows 10+ ·{" "}
-          <a href="https://github.com/artgun66/StrokeChat/releases" target="_blank" rel="noopener noreferrer"
+          <a href="https://anonymous.4open.science/r/ct-stroke-vlm" target="_blank" rel="noopener noreferrer"
             className="text-[var(--accent)] hover:underline">All releases</a>
         </p>
       </div>
 
       {/* ── Disclaimer ─────────────────────────────────────────────────────── */}
       <p className="mt-8 text-xs leading-relaxed text-[var(--muted)]">
-        StrokeChat is not intended for clinical diagnosis or treatment. Always consult a qualified physician.
+        MedSeg is not intended for clinical diagnosis or treatment. Always consult a qualified physician.
       </p>
 
     </main>

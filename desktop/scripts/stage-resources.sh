@@ -37,16 +37,16 @@ find "$STAGED/backend" -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null
 find "$STAGED/backend" -name "*.sqlite3" -delete 2>/dev/null || true
 
 # 2. BiomedParse service + model code + fine-tuned checkpoint.
-echo "==> biomedparse service + artun_model"
+echo "==> biomedparse service + seg_model"
 rm -rf "$STAGED/biomedparse_service"
 cp -R "$ROOT/biomedparse_service" "$STAGED/biomedparse_service"
 rm -rf "$STAGED/biomedparse_service/.venv"
 find "$STAGED/biomedparse_service" -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
-mkdir -p "$STAGED/artun_model"
-if [[ -d "$ROOT/artun_model" ]]; then
-  cp -R "$ROOT/artun_model/." "$STAGED/artun_model/"
+mkdir -p "$STAGED/seg_model"
+if [[ -d "$ROOT/seg_model" ]]; then
+  cp -R "$ROOT/seg_model/." "$STAGED/seg_model/"
 else
-  echo "!! artun_model not found — BiomedParse will be unavailable in the build"
+  echo "!! seg_model not found — BiomedParse will be unavailable in the build"
 fi
 
 # 3. Frontend — Next.js standalone server (the supervisor runs `node server.js`).

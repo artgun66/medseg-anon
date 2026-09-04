@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "StrokeChat",
+  "productName": "MedSeg",
   "version": "0.1.0",
-  "identifier": "com.strokechat.app",
+  "identifier": "com.medseg.app",
   "build": {
     "frontendDist": "splash"
   },
@@ -10,7 +10,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "StrokeChat",
+        "title": "MedSeg",
         "width": 1280,
         "height": 860,
         "minWidth": 900,

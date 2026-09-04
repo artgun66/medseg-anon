@@ -54,7 +54,7 @@ versions of exactly those symbols (notably the `Conv2d` wrapper that accepts the
 kwarg — the project's own `torch.nn.Conv2d` fallback is broken).
 
 **If you recreate the biomedparse venv, re-add the shim** (or install real detectron2 on a
-CUDA/Linux box). The checkpoint loaded is `artun_model/outputs/checkpoints/last-v5.ckpt`
+CUDA/Linux box). The checkpoint loaded is `seg_model/outputs/checkpoints/last-v5.ckpt`
 (fine-tuned), falling back to the base `biomedparse_v2.ckpt` if absent.
 
 Segmentation runs on **CPU** here (no CUDA/MPS in the model code) — a single inference

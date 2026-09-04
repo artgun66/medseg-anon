@@ -146,11 +146,11 @@ export function ChatPane({
   useEffect(() => {
     if (prefillFired.current || !modelSlug) return;
     const raw = typeof window !== "undefined"
-      ? sessionStorage.getItem("strokechat_biomedparse_prefill")
+      ? sessionStorage.getItem("medseg_biomedparse_prefill")
       : null;
     if (!raw) return;
     prefillFired.current = true;
-    sessionStorage.removeItem("strokechat_biomedparse_prefill");
+    sessionStorage.removeItem("medseg_biomedparse_prefill");
     try {
       const ctx = JSON.parse(raw) as { message: string; images: Array<{ name: string; dataUrl: string }> };
       const imgs: ImageAttachment[] = ctx.images.map(img => ({
@@ -333,7 +333,7 @@ export function ChatPane({
   ];
 
   function roleLabel(role: DisplayMessage["role"]) {
-    if (role === "assistant") return "StrokeChat";
+    if (role === "assistant") return "MedSeg";
     if (role === "user") return "You";
     return "System";
   }
@@ -405,7 +405,7 @@ export function ChatPane({
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--accent)] text-base font-semibold text-white">
               S
             </div>
-            <p className="text-lg font-semibold text-[var(--text)]">How can StrokeChat help?</p>
+            <p className="text-lg font-semibold text-[var(--text)]">How can MedSeg help?</p>
             <p className="mx-auto mt-3 max-w-lg text-balance text-sm leading-7 text-[var(--muted)]">
               Ask anything about stroke, or drop a CT brain scan image to get an
               AI-powered analysis with segmentation overlay. Follow-up questions

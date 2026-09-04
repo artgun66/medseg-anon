@@ -470,7 +470,7 @@ export default function BiomedParsePage() {
           dataUrl: `data:image/png;base64,${r.original_image}`,
         }));
 
-      sessionStorage.setItem("strokechat_biomedparse_prefill", JSON.stringify({ message, images }));
+      sessionStorage.setItem("medseg_biomedparse_prefill", JSON.stringify({ message, images }));
       const thread = await api.threads.create({ title: `CT Analysis — ${label}` });
       router.push(`/threads/view?id=${thread.id}`);
     } catch {
@@ -636,7 +636,7 @@ export default function BiomedParsePage() {
       )}
 
       <p className="mt-8 text-xs text-[var(--muted)]/50">
-        StrokeChat · research prototype · not for clinical diagnosis or treatment.
+        MedSeg · research prototype · not for clinical diagnosis or treatment.
       </p>
     </main>
   );

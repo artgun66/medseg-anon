@@ -11,7 +11,7 @@ const fontSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "StrokeChat — AI-powered stroke analysis",
+  title: "MedSeg — AI-powered stroke analysis",
   description:
     "Ask questions about stroke and analyse CT scans with AI-powered segmentation. Research tool for stroke education and detection.",
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
               <div className="flex items-center gap-2.5">
                 <div className="min-w-0">
                   <div className="text-[15px] font-bold tracking-tight text-[var(--text)]">
-                    StrokeChat
+                    MedSeg
                   </div>
                   <p className="hidden text-[11px] leading-tight text-[var(--muted)] sm:block sm:max-w-[220px]">
                     AI-powered stroke analysis
@@ -57,7 +57,7 @@ export default function RootLayout({
                 Publications
               </Link>
               <a
-                href="https://github.com/artgun66/StrokeChat"
+                href="https://anonymous.4open.science/r/ct-stroke-vlm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--muted)] transition hover:text-[var(--text)]"
@@ -66,12 +66,6 @@ export default function RootLayout({
                   <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.53 11.53 0 0023.5 12.02C23.5 5.74 18.27.5 12 .5z" />
                 </svg>
                 GitHub
-              </a>
-              <a
-                href="mailto:gunturkunartun@gmail.com"
-                className="inline-flex items-center text-xs font-medium text-[var(--muted)] transition hover:text-[var(--text)]"
-              >
-                Contact us
               </a>
             </div>
           </header>

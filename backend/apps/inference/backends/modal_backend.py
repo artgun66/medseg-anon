@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 MODAL_MODEL_SLUG = "medgemma-4b-it"
 MODAL_CHAT_URL = os.environ.get(
     "MODAL_CHAT_URL",
-    "https://gunturkunartun--medgemma-chat-http.modal.run",
+    "https://anon-workspace--medgemma-chat-http.modal.run",
 )
 
 

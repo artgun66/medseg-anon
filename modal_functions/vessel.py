@@ -5,7 +5,7 @@ Weights uploaded once with:
   modal volume put vessel-weights vessel_weights/nnUNet_weights /nnUNet_weights
 
 HTTP endpoint (for direct browser upload — bypasses Render size limit):
-  https://gunturkunartun--vessel-vessel-api.modal.run/segment
+  https://anon-workspace--vessel-vessel-api.modal.run/segment
 """
 import modal
 

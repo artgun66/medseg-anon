@@ -1,6 +1,6 @@
 "use client";
 
-const KEY = "strokechat_session";
+const KEY = "medseg_session";
 
 export function getSessionKey(): string {
   if (typeof window === "undefined") return "";

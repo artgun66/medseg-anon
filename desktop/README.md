@@ -74,7 +74,7 @@ staged/
 ├─ python-backend/          relocatable CPython 3.12 + backend deps
 ├─ biomedparse_service/     FastAPI service source
 ├─ python-biomedparse/      relocatable CPython 3.11 + torch + detectron2 shim
-├─ artun_model/             BiomedParse model code + last-v5.ckpt
+├─ seg_model/             BiomedParse model code + last-v5.ckpt
 ├─ frontend/                Next standalone output (apps/product/server.js + .next + node_modules)
 ├─ bin/<os>/                llama-server + node
 └─ models/                  gemma-*.gguf + mmproj-*.gguf + bundled.yaml

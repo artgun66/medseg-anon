@@ -24,10 +24,10 @@ from PIL import Image
 
 # ── paths ────────────────────────────────────────────────────────────────────
 SERVICE_DIR = Path(__file__).parent
-BIOMEDPARSE_DIR = SERVICE_DIR.parent / "artun_model" / "BiomedParse"
+BIOMEDPARSE_DIR = SERVICE_DIR.parent / "seg_model" / "BiomedParse"
 # Only the fine-tuned checkpoint is shipped; the un-fine-tuned base (biomedparse_v2.ckpt)
 # was removed since it is never used when the fine-tuned weights are present.
-FINETUNED_CKPT = SERVICE_DIR.parent / "artun_model" / "outputs" / "checkpoints" / "last-v5.ckpt"
+FINETUNED_CKPT = SERVICE_DIR.parent / "seg_model" / "outputs" / "checkpoints" / "last-v5.ckpt"
 
 sys.path.insert(0, str(BIOMEDPARSE_DIR))
 sys.path.insert(0, str(SERVICE_DIR))  # so detectron2_shim is importable

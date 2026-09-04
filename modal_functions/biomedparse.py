@@ -2,7 +2,7 @@
 
 Deployed with: modal deploy modal_functions/biomedparse.py
 Weights uploaded once with: modal volume put biomedparse-weights <local_ckpt> /checkpoints/last-v5.ckpt
-Call from Django: POST https://gunturkunartun--biomedparse-segment.modal.run
+Call from Django: POST https://anon-workspace--biomedparse-segment.modal.run
   with JSON body: {"image_b64": "<base64>", "prompt": "..."}
 """
 import modal
@@ -40,7 +40,7 @@ image = (
         "panopticapi @ git+https://github.com/cocodataset/panopticapi.git",
         "fvcore",
     )
-    .add_local_dir("artun_model/BiomedParse", remote_path=BIOMEDPARSE_SRC)
+    .add_local_dir("seg_model/BiomedParse", remote_path=BIOMEDPARSE_SRC)
     .add_local_dir("biomedparse_service/detectron2_shim", remote_path=SHIM_SRC)
 )
 

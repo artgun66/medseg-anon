@@ -9,7 +9,7 @@ docs
 infra
 scripts
 agent
-artun_model
+seg_model
 uv.lock
 pyproject.toml
 docker-compose.local.yml

@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 BIOMEDPARSE_SERVICE = os.environ.get("BIOMEDPARSE_SERVICE_URL", "http://127.0.0.1:8001")
 MODAL_BIOMEDPARSE_URL = os.environ.get(
     "MODAL_BIOMEDPARSE_URL",
-    "https://gunturkunartun--biomedparse-segment.modal.run",
+    "https://anon-workspace--biomedparse-segment.modal.run",
 )
 # Use Modal when the URL is set, or when MODAL_TOKEN_ID is present (cloud env).
 USE_MODAL = bool(os.environ.get("MODAL_BIOMEDPARSE_URL") or os.environ.get("MODAL_TOKEN_ID") or os.environ.get("RENDER"))

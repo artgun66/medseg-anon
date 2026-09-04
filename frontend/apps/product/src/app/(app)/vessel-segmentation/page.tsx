@@ -7,7 +7,7 @@ const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 // to the Modal HTTP endpoint which has no such restriction.
 const VESSEL_URL =
   process.env.NEXT_PUBLIC_VESSEL_URL ??
-  "https://gunturkunartun--vessel-vessel-api.modal.run";
+  "https://anon-workspace--vessel-vessel-api.modal.run";
 
 type Result = {
   job_id: string;
@@ -227,7 +227,7 @@ export default function VesselSegmentationPage() {
       </div>
 
       <p className="mt-6 text-xs text-[var(--muted)]">
-        StrokeChat · alceballosa/robust-vessel-segmentation · CC-BY-NC-SA 4.0 · not for clinical use.
+        MedSeg · alceballosa/robust-vessel-segmentation · CC-BY-NC-SA 4.0 · not for clinical use.
       </p>
 
     </main>

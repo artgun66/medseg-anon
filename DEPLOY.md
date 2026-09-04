@@ -9,7 +9,7 @@ You only need to finish the Render and Vercel setup below.
 
 ## 1. Modal (already done)
 
-Three functions are live on your account `gunturkunartun`:
+Three functions are live on your Modal account:
 - `gemma` → `chat_stream` — Gemma 3 27B-IT text/vision chat on A10G
 - `biomedparse` → `segment` — CT scan segmentation on A10G
 - `vessel` → `segment` — nnUNet vessel segmentation on A10G
